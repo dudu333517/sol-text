@@ -89,13 +89,6 @@ def main():
                 print(message)
                 send_telegram_message(message)
             else:
-                message = (
-                    f"当前没有利润。\n"
-                    f"数量为：<code>{bwb_amount:.8f} BWB</code>\n"
-                    f"BGB 数量：<code>{bgb_amount:.8f} BGB</code>"
-                )
-                print(message)
-                send_telegram_message(message)
                 print('没有利润')
         else:
             print("获取报价失败，无法计算利润")
